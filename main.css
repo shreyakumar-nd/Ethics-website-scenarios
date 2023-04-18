@@ -4,9 +4,13 @@
 
 h1{
   padding-top: 30px
-
 }
 
 small{
   padding-bottom: 30px;
+}
+
+#myInput{
+  width: 965px;
+  font-size: 14pt;
 }

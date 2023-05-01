@@ -1,18 +1,18 @@
-Descriptions for Ethics Website Cards
+# Descriptions for Ethics Website Cards
 
-Overview: 
+## Overview: 
 These descriptions are for the ethics scenarios on the website. (A copy of this descriptions can be found in the github descriptions.md) 
 
 The goal is to add a description for each scenario. Then, this description could also be searched for in the search bar.
 
 
-Descriptions: 
-
-1.Software Developer realizes a sentencing algorithm unproportionately sentences minorities.
+## Descriptions: 
+Based on order of cards May 2023
+1. Software Developer realizes a sentencing algorithm unproportionately sentences minorities.
 
 2. Facebook founder issues COVID-19 vaccines containing a micro tracking chip. 
 
-3.Investigating pollution within a plant.
+3. Investigating pollution within a plant.
 
 4. You are the Chair of the US Federal reserve and you are witnessing the Lehman Brothers collapsing.
 

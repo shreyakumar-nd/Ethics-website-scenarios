@@ -1,5 +1,3 @@
-<!-- about.html first draft bootstrapr -->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -8,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <style>
+    #category-section {
+      height: 500px; /* Adjust based on your navbar height */
+      overflow-y: auto;
+    }
+  </style>
   <title>Ethics Tool - About Page</title>
 </head>
 
@@ -17,7 +20,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-light navbar-light">
     <img src="https://unsplash.it/30/30" class="mr-2">
-    <a class="navbar-brand" href="#">Ethics Tool Project</a>
+    <a class="navbar-brand" href="#">Your Project Name</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,51 +47,62 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 
+    <!-- Progress Section -->
+    <div class='py-3 my-4'></div>
+    <h1>Project Progress</h1>
+    <p>Our progress throughout the semester has been steady and impactful. We have successfully completed 25% of the project, and...</p>
+    <div class="progress" style="height: 30px;">
+      <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">25%</div>
+    </div>
+
+    <hr>
+
     <!-- Card Section -->
     <div class="row">
       <!-- Sample Card 1 -->
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="card text-center">
           <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
           <div class="card-body ">
-            <p>Impact...</p>
+            <p>Google Forms and Modules</p>
             <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
           </div>
         </div>
       </div>
 
       <!-- Sample Card 2 -->
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="card text-center">
           <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
           <div class="card-body ">
-            <p>Challenges...</p>
+            <p>Google Apps Script</p>
             <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
           </div>
         </div>
       </div>
 
       <!-- Sample Card 3 -->
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="card text-center">
           <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
           <div class="card-body ">
-            <p>What Worked Well/Takeaways...</p>
+            <p>Rating System</p>
             <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Progress Section -->
-    <div class='py-3 my-4'></div>
-    <h1>Project Progress</h1>
-    <p>Project Charter Plan:</p>
-    <br>
-    <p>Our Progress:</p>
-    <div class="progress" style="height: 30px;">
-      <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-        aria-valuemax="100">25%</div>
+      <!-- Sample Card 4 -->
+      <div class="col-sm-6 col-md-3">
+        <div class="card text-center">
+          <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
+          <div class="card-body ">
+            <p>Figma Redesign</p>
+            <p class="mt-3 text-center"><a type="button" class="btn btn-primary text-light">Button</a></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Video Section -->
@@ -98,38 +112,54 @@
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3nrLc_JOF7k" allowfullscreen></iframe>
     </div>
 
-    <br>
+  <br>
 
-    <!-- Tab Section -->
-    <div class="row">
-      <div class="col-sm-12">
-        <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item"><a class="nav-link active" href="#panel1" data-toggle="tab">Milestones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#panel2" data-toggle="tab">Team Reflection</a></li>
-          <li class="nav-item"><a class="nav-link" href="#panel3" data-toggle="tab">Handover Documents</a></li>
+  <!-- Category Sections with Navbar -->
+  <div id="category-section" data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading1">Milestones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Reflection</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Handover Documents</a></li>
         </ul>
       </div>
-      <div class="col-sm-12">
-        <div class="tab-content" id="tab-Contentundefined">
-          <!-- Tab 1 Content -->
-          <div class="mt-3 ml-2 tab-pane fade show active" id="panel1" role="tabpanel">
-            <h5>Milestones</h5>
-            <p>Our journey was marked by several key milestones...</p>
-          </div>
-          <!-- Tab 2 Content -->
-          <div class="mt-3 ml-2 tab-pane fade" id="panel2" role="tabpanel">
-            <h5>Team Reflection</h5>
-            <p>Reflecting on our teamwork, we found that...</p>
-          </div>
-          <!-- Tab 3 Content -->
-          <div class="mt-3 ml-2 tab-pane fade" id="panel3" role="tabpanel">
-            <h5>Handover Documents</h5>
-            <p>For the next team, we have prepared comprehensive handover documents...</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </nav>
 
+    <!-- Milestones Section -->
+    <h2 id="scrollspyHeading1">Milestones</h2>
+    <p>Our project has achieved significant milestones during its development. Here are four major milestones:</p>
+    <ol>
+      <li>Completion of Initial Design Phase</li>
+      <li>Successful Integration of Key Features</li>
+      <li>Implementation of User Feedback</li>
+      <li>Finalization of Beta Testing</li>
+    </ol>
+    <h3>Project Impact</h3>
+    <p>The impact of our project is evident in various aspects, including user engagement, positive feedback, and the successful implementation of key functionalities.</p>
+    <!-- Add more content for the Milestones section -->
+
+    <!-- Reflection Section -->
+    <h2 id="scrollspyHeading2">Reflection</h2>
+    <p>Reflecting on our teamwork and project development, we identified the following:</p>
+    <ul>
+      <li>What Went Well: Effective collaboration, timely communication</li>
+      <li>What Worked Well: Agile development, continuous feedback</li>
+      <li>What Didn't Work Well: Initial planning, unexpected technical challenges</li>
+    </ul>
+    <!-- Add more content for the Reflection section -->
+
+    <!-- Handover Documents Section -->
+    <h2 id="scrollspyHeading3">Handover Documents</h2>
+    <p>For the next team, we have prepared comprehensive handover documents. Below are the links to the documents:</p>
+    <ul>
+      <li><a href="#">Project Summary</a></li>
+      <li><a href="#">User Manuals</a></li>
+      <li><a href="#">Technical Documentation</a></li>
+    </ul>
+    <!-- Add more links or content for the Handover Documents section -->
   </div>
 
   <!-- Footer Section -->
@@ -137,8 +167,8 @@
     <div class="row">
       <!-- Contact Info -->
       <div class="col-md-3">
-        <h2 class="mb-1">Ethics Team</h2>
-        <p class="mb-3"><small><em>Juliette, Jennifer, Mia, and Elysa</em></small></p>
+        <h2 class="mb-1">Your Brand</h2>
+        <p class="mb-3"><small><em>Best project ever!</em></small></p>
         <p>Address 1 <br> Address 2 <br> City, State ZIP </p>
         <p>TEL (999) 123-4567 <br> FAX (999) 321-7654 </p>
         <ul class="list-inline mt-5">

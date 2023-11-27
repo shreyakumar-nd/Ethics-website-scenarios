@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous">
+  <style>
+    #category-section {
+      height: 500px; /* Adjust based on your navbar height */
+      overflow-y: auto;
+    }
+
+    .card {
+      height: 500px;
+    }
+
+    .card-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-content {
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity as needed */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card-container:hover .card-content {
+      opacity: 1;
+      height: fit-content;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .card-paragraph {
+      margin-top: 10px;
+      height: fit-content;
+    }
+  </style>
+  <title>Ethics Tool - About Page</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <img src="https://unsplash.it/30/30" class="mr-2">
+    <a class="navbar-brand" href="#">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-body">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#bsr-wrapper">Project Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project-demo">Project Demo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#category-section">Milestones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#category-section">Reflection</a></li>
+        <li class="nav-item"><a class="nav-link" href="#category-section">Handover Documents</a></li>
+        <li class="nav-item"><a class="nav-link" href="#helpful-links">Helpful Links</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container" id="bsr-wrapper">
+
+    <!-- Jumbotron Section -->
+    <div class="jumbotron">
+      <h1 class="display-4">Project Overview</h1>
+      <p class="lead">Welcome to the about page of our Ethics Tool!At its core, our project is a dedicated effort to construct an educational resource that fosters ethical awareness among future engineers. Through the development of an interactive website featuring engaging modules, we aim to instill thoughtful discussions on the ethical considerations inherent in technology, preparing aspiring engineers with a critical mindset for responsible decision-making in their future endeavors.</p>
+      <hr class="my-4">
+      <p>Our ongoing project builds upon the groundwork laid in previous semesters, aiming to craft an engaging website dedicated to educating students about engineering ethics. The heart of our endeavor lies in developing interactive modules that encourage students to delve into thoughtful discussions surrounding the ethical facets of technology. While our initial aspirations included code organization, a front-end facelift, and the integration of new features inspired by aesthetically pleasing designs found on other websites through Figma wireframes, our focus strategically shifted.</p>
+      <p>Instead of solely chasing design aesthetics, we directed our efforts towards addressing foundational issues. We diligently worked on fixing broken Google Forms, implemented a robust rating system for systematic response evaluation, and introduced modular components to enhance the project's functionality. This shift in emphasis reflects our commitment to laying a solid and functional foundation for the website.</p>
+      <p>Navigating the complexities of project development, our dedication to engineering ethics education remains unwavering. The ongoing nature of this initiative extends into the next semester, transforming into a continuous research project. This journey exemplifies the adaptability required in project development to meet the evolving needs of creating a valuable and impactful educational resource.</p>
+    </div>
+
+    <!-- Progress Section -->
+    <div class='py-3 my-4'></div>
+    <h1>Project Progress</h1>
+    <p>This semester, our team has made substantial progress in addressing four key components integral to our project's development.</p>
+    <div class="progress" style="height: 30px;">
+      <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+
+    <hr>
+
+    <!-- Card Section -->
+    <div class="row">
+      <!-- Sample Card 1 -->
+      <div class="col-md-3 card-container">
+        <div class="card text-center">
+          <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
+          <p class="card-title">Google Forms and Modules</p>
+          <div class="card-content">
+            <p class="card-paragraph">Our work on Google Forms involved addressing specific issues such as form validation errors, ensuring a smoother submission process for users. Additionally, we created new forms tailored to distinct learning modules, incorporating interactive elements and scenarios to make the learning experience more dynamic. For instance, one module focused on ethical considerations in algorithmic decision-making, prompting users to engage with relevant content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample Card 2 -->
+      <div class="col-md-3 card-container">
+        <div class="card text-center">
+          <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
+          <p class="card-title">Google Apps Script</p>
+          <div class="card-content">
+            <p class="card-paragraph">To streamline Google Forms processes, we delved into Google Apps Script development. This included scripting to automate form submission and creation, reducing manual efforts for users. For instance, we created scripts that automatically generated forms based on predefined templates, facilitating a quicker and more efficient form creation process. These scripts aimed to enhance the overall functionality of Google Forms within our project.            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample Card 3 -->
+      <div class="col-md-3 card-container">
+        <div class="card text-center">
+          <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
+          <p class="card-title">Rating System</p>
+          <div class="card-content">
+            <p class="card-paragraph">The new rating system introduced a structured approach to evaluating user responses. It included specific criteria such as clarity, relevance, and depth of content, allowing users to provide nuanced feedback. For example, users could rate the ethical considerations presented in a module based on their perceived importance. The system not only provided valuable insights for users but also contributed to the project's analytical capabilities by aggregating and visualizing these ratings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample Card 4 -->
+      <div class="col-md-3 card-container">
+        <div class="card text-center">
+          <img src="http://unsplash.it/300/200" class="card-img-top" alt="...">
+          <p class="card-title">Figma Redesign</p>
+          <div class="card-content">
+            <p class="card-paragraph">Our Figma redesign plan involved a detailed analysis of the current front-end design and a vision for its evolution. We created wireframes and mockups outlining specific changes, such as a more intuitive navigation menu and interactive elements for user engagement. For instance, the redesign included a user-friendly dashboard displaying progress in completed modules and recommended next steps. This meticulous planning aimed to enhance the project's visual appeal and user experience while maintaining alignment with ethical considerations integrated into the learning modules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="project-demo" class='py-3 my-4'></div>
+    <h1>Project Demo</h1>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3nrLc_JOF7k" allowfullscreen></iframe>
+    </div>
+
+  <br>
+
+  <!-- Category Sections with Navbar -->
+  <div id="category-section" data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading1">Milestones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Reflection</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Handover Documents</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Milestones Section -->
+    <h2 id="scrollspyHeading1">Milestones</h2>
+    <p>Our project has achieved significant milestones during its development. Here are four major milestones:</p>
+    <ol>
+      <li>Completion of Initial Design Phase</li>
+      <li>Successful Integration of Key Features</li>
+      <li>Implementation of User Feedback</li>
+      <li>Finalization of Beta Testing</li>
+    </ol>
+    <h3>Project Impact</h3>
+    <p>The impact of our project is evident in various aspects, including user engagement, positive feedback, and the successful implementation of key functionalities.</p>
+    <!-- Add more content for the Milestones section -->
+
+    <!-- Reflection Section -->
+    <h2 id="scrollspyHeading2">Reflection</h2>
+    <p>Reflecting on our teamwork and project development, we identified the following:</p>
+    <ul>
+      <li>What Went Well: Effective collaboration, timely communication</li>
+      <li>What Worked Well: Agile development, continuous feedback</li>
+      <li>What Didn't Work Well: Initial planning, unexpected technical challenges</li>
+    </ul>
+    <!-- Add more content for the Reflection section -->
+
+    <!-- Handover Documents Section -->
+    <h2 id="scrollspyHeading3">Handover Documents</h2>
+    <p>For the next team, we have prepared comprehensive handover documents. Below are the links to the documents:</p>
+    <ul>
+      <li><a href="#">Project Summary</a></li>
+      <li><a href="#">User Manuals</a></li>
+      <li><a href="#">Technical Documentation</a></li>
+    </ul>
+    <!-- Add more links or content for the Handover Documents section -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-light pt-5 pb-2 px-5">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h2 class="mb-1">Your Brand</h2>
+        <p class="mb-3"><small><em>Best project ever!</em></small></p>
+        <p>Address 1 <br> Address 2 <br> City, State ZIP </p>
+        <p>TEL (999) 123-4567 <br> FAX (999) 321-7654 </p>
+        <ul class="list-inline mt-5">
+          <li class="list-inline-item"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-github-alt" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item py-1"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item py-1"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-facebook-official" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Links Section 1 -->
+      <div class="col-md-4">
+        <h5>Useful Links</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 1</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 2</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 3</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 4</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 5</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Section 2 -->
+      <div class="col-md-4">
+        <h5>Other Links</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 6</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 7</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 8</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 9</a></li>
+          <li class="list-group-item py-1 bg-transparent border-0"><a href="#" target="_blank">Link 10</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-4">
+      <!-- Copyright -->
+      <div class="col-sm-6">
+        <p>Copyright © 20XX Your Brand</p>
+      </div>
+
+      <!-- Additional Links -->
+      <div id="helpful-links" class="col-sm-6">
+        <ul class="list-inline text-sm-center text-md-right">
+          <li class="list-inline-item"><a href="#" target="_blank">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" target="_blank">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

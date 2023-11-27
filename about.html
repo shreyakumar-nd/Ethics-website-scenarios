@@ -40,31 +40,30 @@
 			margin-top: 10px;
 			height: fit-content;
 			}
+
+			.carousel-inner iframe {
+			width: 100%;
+			height: 700px;
+			}
 		</style>
 		<title>Ethics Tool - About Page</title>
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg bg-light navbar-light">
-			<img src="https://unsplash.it/30/30" class="mr-2">
-			<a class="navbar-brand" href="#">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false"
-					aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbar-body">
-					<ul class="navbar-nav mr-auto"></ul>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-			<a class="nav-link" href="#bsr-wrapper">Project Overview</a></li>
-			<li class="nav-item"><a class="nav-link" href="#project-demo">Project Demo</a></li>
-			<li class="nav-item"><a class="nav-link" href="#category-section">Milestones</a></li>
+		<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+			<div class="collapse navbar-collapse" id="navbar-body">
+				<ul class="navbar-nav mr-auto"></ul>
+				<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="#bsr-wrapper">Project Overview</a></li>
+			<li class="nav-item"><a class="nav-link" href="#videoCarousel">Project Demo</a></li>
 			<li class="nav-item"><a class="nav-link" href="#category-section">Reflection</a></li>
-			<li class="nav-item"><a class="nav-link" href="#category-section">Handover Documents</a></li>
-			<li class="nav-item"><a class="nav-link" href="#helpful-links">Helpful Links</a></li>
+			<li class="nav-item"><a class="nav-link" href="#handover-section">Handover Documents</a></li>
 			</ul>
 			</div>
 		</nav>
+
+		<br>
+
 		<!-- Main Content -->
 		<div class="container" id="bsr-wrapper">
 		<!-- Jumbotron Section -->
@@ -131,24 +130,25 @@
 				</div>
 			</div>
 		</div>
+		
 		<br>
+
 		<!-- Video Section -->
 		<div id="videoCarousel" class="carousel slide" data-ride="carousel">
 			<h1>Project Demo Videos</h1>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<h5>Google Forms</h5>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<h5>Figma Redesign</h5>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<h5>Google Apps Script</h5>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<!-- Add more carousel items as needed -->
+			<div class="carousel-item active">
+				<h5>Google Forms</h5>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="carousel-item">
+				<h5>Google Apps Script</h5>
+				<iframe width="560" height="315" src="https://drive.google.com/file/d/1DZB56NCOwCGDEXqbUimPtzXNF8T0Wc1h/preview" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="carousel-item">
+				<h5>Figma Redesign</h5>
+				<iframe width="560" height="315" src="https://drive.google.com/file/d/1S85Zyb4dJY8AvbiAIMHy5kumLk_Q-MSq/preview" frameborder="0" allowfullscreen></iframe>
+			</div>
 			</div>
 			<a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -159,17 +159,19 @@
 			<span class="sr-only">Next</span>
 			</a>
 		</div>
+
 		<br>
+		
 		<!-- Category Sections with Navbar -->
 		<div id="category-section" data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="0">
 			<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg bg-light navbar-light">
+			<nav class="navbar navbar-expand-lg bg-light navbar-light" style="position: sticky; top: 0; z-index: 100;">
 				<div class="collapse navbar-collapse" id="navbar-body">
 					<ul class="navbar-nav mr-auto"></ul>
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="#scrollspyHeading1">Milestones</a></li>
-						<li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Reflection</a></li>
-						<li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Handover Documents</a></li>
+						<li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Project Impact</a></li>
+						<li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Reflection</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -190,10 +192,10 @@
 					</ol>
 				</li>
 			</ol>
-			<h3>Project Impact</h3>
+			<h2 id="scrollspyHeading2">Project Impact</h2>
 			<p>The project's positive impact extends to both society and users by streamlining and automating Google Forms, offering an efficient means for the intended client to manage and collect data. Through the incorporation of a metric system for response evaluation, the platform facilitates informed decision-making. Furthermore, the societal benefit lies in the ethical research application for students, fostering a culture of critical thinking among future engineers and illustrating the tangible impact of ethical considerations in technology development. This initiative not only enhances the client's workflow but also contributes to the ethical education of emerging professionals, promoting responsible and thoughtful innovation.</p>
 			<!-- Reflection Section -->
-			<h2 id="scrollspyHeading2">Reflection</h2>
+			<h2 id="scrollspyHeading3">Reflection</h2>
 			<p>Reflecting on our teamwork and project development, we identified the following:</p>
 			<ul>
 				<li>
@@ -217,16 +219,23 @@
 					<li>Insights gained from this experience inform future projects, stressing the significance of understanding project requirements and setting realistic goals for overall project success.</li>
 				</ul>
 			</ul>
-			<!-- Handover Documents Section -->
-			<h2 id="scrollspyHeading3">Handover Documents</h2>
-			<p>For the next team, we have prepared comprehensive handover documents. Below are the links to the documents:</p>
-			<ul>
-				<li><a href="#">DOCUMENT 1</a></li>
-				<li><a href="#">DOCUMENT 2</a></li>
-				<li><a href="#">DOCUMENT 3</a></li>
-			</ul>
 		</div>
+		
 		<br>
+		
+		<!-- Handover Documents Section -->
+		<div id ="handover-section">
+		<h2 id="scrollspyHeading3">Handover Documents</h2>
+		<p>For the next team, we have prepared handover documents we hope will be helpful. Below are the links to the documents:</p>
+		<ul>
+			<li><a href="#">DOCUMENT 1</a></li>
+			<li><a href="https://docs.google.com/document/d/166kldxuC4-EaPnHJF1M5F74_bYEHQOGb-iwi5PhhPMA/edit?usp=sharing">Mid-Semester Knowledge Share</a></li>
+			<li><a href="https://docs.google.com/document/d/1EFJCmQM2CXGgqz95PsOD4Pmejwx6ZASjMCTgaHdEtkY/edit?usp=sharing">Mid-Semester Project Update</a></li>
+		</ul>
+		</div>
+
+		<br>
+		
 		<!-- Footer Section -->
 		<footer class="bg-light pt-4 pb-2 px-5">
 			<div class="row">
@@ -234,8 +243,8 @@
 					<h2 class="mb-1">Ethics Team</h2>
 				</div>
 				<!-- Team Info -->
-				<div class="col-md-6">
-					<p class="mb-3"><small><em>Juliette Liebov, Jennifer Tran, Mia Patel, and Elysa Berkeley</em></small></p>
+				<div class="col-md-6 text-right">
+					<p class="mb-1"><small><em>Juliette Liebov, Jennifer Tran, Mia Patel, and Elysa Berkeley</em></small></p>
 				</div>
 			</div>
 		</footer>
